@@ -17,6 +17,6 @@ echo Where is Ricochet installed?
 for /f "tokens=16" %%i in ('driverquery /v ^| findstr /i "randgrid"') do set "l1=%%i"
 
 set "location=%l1:\??\=%"
-set "location=%location%\Call of Duty HQ\Randgrid.sys"
+set "location=%location%\ of Duty HQ\Randgrid.sys"
 echo %location%
 pause
