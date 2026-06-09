@@ -32,4 +32,11 @@ for %%p in (%processList%) do (
     )
 )
 
+sc query "COD.Broker.Service" | findstr /i "RUNNING" >nul
+if %errorlevel%==0 (
+    echo COD.Broker.Service - Yes!
+) else (
+    echo COD.Broker.Service - No
+)
+
 pause
